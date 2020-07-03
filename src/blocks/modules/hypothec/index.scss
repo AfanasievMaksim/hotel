@@ -1,0 +1,225 @@
+.hypothec {
+  padding-bottom: 48px;
+
+  @include desktop {
+    padding-bottom: 116px;
+  }
+
+  .section-subtitle {
+    margin-bottom: 42px;
+    max-width: 546px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include desktop {
+      margin-bottom: 100px;
+    }
+  }
+
+  .container--wp {
+    background-color: #F1F1F1;
+    padding-top: 13px;
+    padding-bottom: 6px;
+
+    @include desktop {
+      padding-right: 40px;
+      padding-left: 40px;
+      padding-top: 40px;
+      padding-bottom: 24px;
+    }
+  }
+
+  .section-header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      flex-shrink: 0;
+      padding-right: 60px;
+      padding-left: 60px;
+      margin-bottom: 18px;
+      position: relative;
+
+      @include desktop {
+        padding-left: 0;
+
+        &--1 {
+          padding-right: 119px;
+        }
+        &--2 {
+          width: 360px;
+          padding-right: 30px;
+        }
+        &--3 {
+          padding-right: 30px;
+        }
+      }
+    }
+
+    .hid-input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    &__title {
+      font-size: 16px;
+      line-height: 26px;
+      color: rgba(51, 51, 51, 0.5);
+    }
+
+    &__des {
+      margin-top: 3px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 36px;
+      color: #333333;
+    }
+
+    &__banks {
+      line-height: 0;
+      font-size: 0;
+      margin-top: -3px;
+    }
+  }
+
+  .section-filters {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 17px;
+    padding-bottom: 6px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include desktop {
+      padding-top: 60px;
+      padding-bottom: 54px;
+      justify-content: space-between;
+    }
+  }
+
+  .section-filter {
+    width: 100%;
+    max-width: 320px;
+    margin-right: 28px;
+    margin-left: 28px;
+    margin-bottom: 11px;
+
+    @include desktop {
+      margin-left: 0;
+      margin-bottom: 0;
+      width: 30%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__title {
+      font-size: 16px;
+      line-height: 26px;
+      color: #333333;
+    }
+
+    &__input {
+      margin-top: 15px;
+      width: 100%;
+      border: none;
+      background: #FFFFFF;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      height: 46px;
+      font-size: 18px;
+      line-height: 25px;
+      color: #000000;
+      padding-left: 16px;
+      padding-left: 16px;
+      text-align: left !important;
+      outline: none;
+    }
+  }
+
+  .irs--round {
+    height: 40px;
+
+    @include desktop {
+      height: 7px;
+    }
+
+    .irs-line {
+      top: 26px;
+      height: 0px;
+    }
+
+    .irs-bar {
+      top: 24px;
+      height: 1px;
+      background-color: $main-color;
+
+      @include desktop {
+        top: 0;
+        height: 4px;
+        background-color: $main-color;
+        border-top: 2px solid #f1f1f1;
+        border-bottom: 1px solid #f1f1f1;
+      }
+    }
+
+    .irs-handle {
+      top: 10px;
+      width: 30px;
+      height: 30px;
+      border: none;
+      background-color: $main-color;
+      border-radius: 50%;
+      box-shadow: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 11px;
+        height: 12px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../img/range-lines.svg');
+        background-repeat: no-repeat;
+      }
+
+      @include desktop {
+        width: 15px;
+        height: 15px;
+        top: -5px;
+        background-color: $main-color;
+        border: 1.5px solid #f1f1f1;
+        box-shadow: none;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .section-action {
+    width: 100%;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @include desktop {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+
+    .btn {
+      width: 222px;
+    }
+  }
+}
